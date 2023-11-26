@@ -10,6 +10,8 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { CarListingComponent } from './components/car-listing/car-listing.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServicesComponent } from './components/services/services.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ReservationsComponent,
     AboutComponent,
     ContactComponent,
-    CarListingComponent
+    CarListingComponent,
+    ServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
