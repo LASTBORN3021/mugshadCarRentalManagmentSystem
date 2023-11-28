@@ -12,6 +12,9 @@ import { CarListingComponent } from './components/car-listing/car-listing.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServicesComponent } from './components/services/services.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,12 +26,16 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     CarListingComponent,
     ServicesComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
