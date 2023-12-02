@@ -1,10 +1,10 @@
 div {
     text-align: center;
-    background-image:linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.7)), url('../../../assets/back.jpeg'); /* Make sure 'back.jpg' is in the same directory as your stylesheet */
+    background-image:linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.7)), url('../../../assets/backk.jpeg'); /* Make sure 'back.jpg' is in the same directory as your stylesheet */
     background-size: cover;
     background-position: center;
-    padding: 20px; /* Adjust padding as needed */
-    color: #181c1f; /* Text color */
+    padding: 60px; /* Adjust padding as needed */
+    color: #000000f6; /* Text color */
 }
 div::before {
     content: '';
@@ -13,8 +13,8 @@ div::before {
     left: 0;
     width: 80%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.3); /* Adjust the alpha value for transparency */
-    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.219); /* Adjust the alpha value for transparency */
+    border-radius: 10px;
     z-index: -1; /* Place the overlay behind the content */
 }
 h2 {
