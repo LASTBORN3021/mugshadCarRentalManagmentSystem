@@ -1,0 +1,35 @@
+div {
+    text-align: center;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.7)), url('../../../assets/backk.jpeg'); /* Make sure 'back.jpg' is in the same directory as your stylesheet */
+    background-size: cover;
+    background-position: center;
+    padding: 60px; /* Adjust padding as needed */
+    color: #000000f6; /* Text color */
+}
+div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.219); /* Adjust the alpha value for transparency */
+    border-radius: 10px;
+    z-index: -1; /* Place the overlay behind the content */
+}
+h2 {
+    color: #2885e7; /* Heading color */
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: rgb(0, 119, 255);
+}

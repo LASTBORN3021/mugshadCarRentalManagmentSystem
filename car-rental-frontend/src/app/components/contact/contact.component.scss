@@ -1,0 +1,103 @@
+div {
+    text-align: center;
+    background-image:linear-gradient(rgba(255, 255, 255, 0.863), rgba(255, 255, 255, 0.7)), url('../../../assets/fleet2.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #2d3135;
+    border: 1px solid #007bff;
+    border-radius: 6px;
+    margin: 20px;
+    position: relative;
+    z-index: 1; /* Ensure the content is above the overlay */
+}
+
+div::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.315); /* Adjust the alpha value for transparency */
+    border-radius: 6px;
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.144), rgba(0, 0, 0, 0.5)), url('../../../assets/backk.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+body {
+    background-color: transparent;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for transparency */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.h2 {
+    text-align: center;
+    color: #2885e7;
+}
+
+h4 {
+    color: #343a40;
+}
+
+label {
+    font-weight: bold;
+    color: #495057;
+}
+
+input.form-control,
+textarea.form-control {
+    margin-bottom: 15px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+button.btn-primary:hover {
+    width: 200px;
+    padding: 15 px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    background-color: #0056b3;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
