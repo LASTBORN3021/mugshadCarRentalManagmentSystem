@@ -1,0 +1,77 @@
+<div class="outer">
+    <div class="container">
+      <div class="row">
+        <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+          <div class="panel border bg-white">
+            <div class="panel-heading">
+              <h3 class="pt-3 font-weight-bold">Signup</h3>
+              <div class="panel-body p-3">
+                <form [formGroup]="SignupForm" (ngSubmit)="onSubmit()">
+                  <div class="form-group pt-3">
+                    <div class="input-field" [class.error]="SignupForm.controls['firstname'].dirty && SignupForm.hasError('required', 'firstname')">
+                      <span class="fa fa-user p-2"></span>
+                      <input type="text" formControlName="firstname" placeholder="First Name">
+                    </div>
+                    <small *ngIf="SignupForm.get('firstname')?.dirty && SignupForm.hasError('required', 'firstname')" class="text-danger">*First Name is Required</small>
+                  </div>
+  
+                  <div class="form-group pt-3">
+                    <div class="input-field" [class.error]="SignupForm.controls['lastname'].dirty && SignupForm.hasError('required', 'lastname')">
+                      <span class="fa fa-user p-2"></span>
+                      <input type="text" formControlName="lastname" placeholder="Last Name">
+                    </div>
+                    <small *ngIf="SignupForm.get('lastname')?.dirty && SignupForm.hasError('required', 'lastname')" class="text-danger">*Last Name is Required</small>
+                  </div>
+  
+                  <div class="form-group pt-3">
+                    <div class="input-field" [class.error]="SignupForm.controls['email'].dirty && SignupForm.hasError('required', 'email')">
+                      <span class="fa fa-envelope p-2"></span>
+                      <input type="email" formControlName="email" placeholder="Email">
+                    </div>
+                    <small *ngIf="SignupForm.get('email')?.dirty && SignupForm.hasError('required', 'email')" class="text-danger">*Email is Required</small>
+                  </div>
+  
+                  <div class="form-group pt-3">
+                    <div class="input-field" [class.error]="SignupForm.controls['username'].dirty && SignupForm.hasError('required', 'username')">
+                      <span class="fa fa-user p-2"></span>
+                      <input type="text" formControlName="username" placeholder="Username">
+                    </div>
+                    <small *ngIf="SignupForm.get('username')?.dirty && SignupForm.hasError('required', 'username')" class="text-danger">*Username is Required</small>
+                  </div>
+  
+                  <div class="form-group pt-3">
+                    <div class="input-field" [class.error]="SignupForm.controls['password'].dirty && SignupForm.hasError('required', 'password')">
+                      <span class="fa fa-lock p-2"></span>
+                      <input [type]="type" formControlName="password" placeholder="Password">
+                      <span (click)="togglePasswordVisibility()" class="fa" [class.fa-eye]="showPassword" [class.fa-eye-slash]="!showPassword"></span>
+                    </div>
+                    <small *ngIf="SignupForm.get('password')?.dirty && SignupForm.hasError('required', 'password')" class="text-danger">*Password is Required</small>
+                  </div>
+  
+                  <button type="submit" class="btn btn-primary btn-block mt-4 w-100">Signup</button>
+  
+                  <div (click)="onSubmit()" class="text-center pt-4 text-muted">Already Have an Account? <a id="forget" routerLink="/Login">Login</a></div>
+                </form>
+              </div>
+  
+              <div class="mx-3 my-2 py-2 bordert">
+                <div class="text-center py-3">
+
+                  <a class="social" href="#" style="--color:#0072b1">
+                    <i class="fa fa-facebook-official px-4" aria-hidden="true"></i>
+                  </a>
+                  <a class="social" href="#" style="--color:#E1306c">
+                    <i class="fa fa-google px-4" aria-hidden="true"></i>
+                  </a>
+                  <a class="social" href="#" style="--color:#4267B2">
+                    <i class="fa fa-github px-4" aria-hidden="true"></i>
+                  </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
