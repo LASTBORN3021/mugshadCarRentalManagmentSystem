@@ -2,3 +2,35 @@ h2{
     text-align: center;
     color: aquamarine;
 }
+p{
+    text-align: center;
+}
+/* Container for the two blocks */
+.container {
+  display: flex;
+}
+
+/* Style for each block */
+.block {
+width: 350px;
+height: 450px;
+border: 2px solid #333;
+margin: 10px;
+padding: 10px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+border-radius: 10px;
+transition: background-color 0.3s ease;
+}
+
+/* Style for the image within each block */
+.block img {
+  max-width: 50%;
+  max-height: 50%;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
