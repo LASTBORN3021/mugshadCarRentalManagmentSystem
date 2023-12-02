@@ -15,6 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DashbordComponent } from './components/dashbord/dashbord.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ServicesComponent,
     FooterComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    DashbordComponent
   ],
   imports: [
     BrowserModule,
