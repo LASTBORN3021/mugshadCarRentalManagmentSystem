@@ -28,13 +28,18 @@ align-items: center;
 text-align: center;
 border-radius: 10px;
 transition: background-color 0.3s ease;
+position: relative;
+margin-bottom: 20px;
 }
 
 /* Style for the image within each block */
 .block img {
-  max-width: 50%;
-  max-height: 50%;
-  margin-bottom: 10px;
-  margin-bottom: 10px;
-  border-radius: 50%;
+  width: 50%;
+  height: 35%;
+  margin-bottom: 0;
+  border-radius: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 5;
 }
+
