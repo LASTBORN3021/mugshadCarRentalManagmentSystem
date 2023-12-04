@@ -1,0 +1,24 @@
+<h1 mat-dialog-title class="dialog-title">
+    Post Content
+    <button mat-icon-button (click)="closeDialog()" class="close-button">
+      <mat-icon>close</mat-icon>
+    </button>
+</h1>
+<form (ngSubmit)="submitPost(postTitle.value, postContent.value)" class="form-container">
+  
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Car Name</mat-label>
+        <input matInput #postTitle placeholder="Enter the title" required>
+    </mat-form-field>
+  
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label>Decription</mat-label>
+        <textarea matInput #postContent placeholder="Write your post here" required></textarea>
+    </mat-form-field>
+    <mat-form-field appearance="fill" class="form-field">
+        <mat-label>picture</mat-label>
+        <textarea matInput #picture placeholder="Write your post here" required></textarea>
+    </mat-form-field>
+  
+    <button mat-button color="primary" type="submit">Add</button>
+</form>
