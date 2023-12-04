@@ -13,8 +13,8 @@ import { DashbordComponent } from './components/dashbord/dashbord.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
-  { path: 'reservations', component: ReservationsComponent },
-  { path: 'about', component: AboutComponent },
+  { path: 'reservations/:carId', component: ReservationsComponent },
+    { path: 'about', component: AboutComponent },
   { path: 'carList', component: CarListingComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'services', component: ServicesComponent },

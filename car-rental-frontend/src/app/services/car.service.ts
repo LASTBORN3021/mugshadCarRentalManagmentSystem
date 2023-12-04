@@ -22,6 +22,9 @@ export class CarService {
    addCars(CarData: FormData): Observable<any> {
     return this.http.post(`${this.apiUrl}`, CarData, httpOptions);
   }
+  getCarById(carId: number) {
+    return this.http.get(`${this.apiUrl}/${carId}`);
+  }
 
   updateCategory(id: number, CarData: any): Observable<any> {
     const url = `${this.apiUrl}/${id}`;
