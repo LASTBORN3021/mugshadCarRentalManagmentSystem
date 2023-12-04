@@ -1,31 +1,51 @@
-<div class="container">
+
+  <div class="container">
     <h2>Reservation Form</h2>
-    <form>
-      <div class="mb-3">
-        <label for="fullName" class="form-label">Full Name</label>
-        <input type="text" class="form-control" id="fullName" placeholder="Enter Full Name">
+    <div class="row">
+      <div class="col-lg-6">
+        <form [formGroup]="reservationForm" (ngSubmit)="onSubmitBooking()">
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" formControlName="fullName" placeholder="Enter Full Name">
+          </div>
+          <div class="mb-3">
+            <label for="idNumber" class="form-label">ID Number</label>
+            <input type="text" class="form-control" id="idNumber" formControlName="idNumber" placeholder="Enter ID Number">
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" formControlName="phoneNumber" placeholder="Enter Phone Number">
+          </div>
+          <div class="mb-3">
+            <label for="pickupDate" class="form-label">Pickup Date</label>
+            <input type="date" class="form-control" id="pickupDate" formControlName="pickupDate">
+          </div>
+          <div class="mb-3">
+            <label for="dropoffDate" class="form-label">Drop-off Date</label>
+            <input type="date" class="form-control" id="dropoffDate" formControlName="dropoffDate">
+          </div>
+          <div class="mb-3">
+            <label for="destination" class="form-label">Destination</label>
+            <input type="text" class="form-control" id="destination" formControlName="destination" placeholder="Enter Destination">
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
-      <div class="mb-3">
-        <label for="idNumber" class="form-label">ID Number</label>
-        <input type="text" class="form-control" id="idNumber" placeholder="Enter ID Number">
+  
+      <div class="col-lg-6">
+        <div *ngIf="selectedCar">
+          <div class="car-card" style="width: 300px; height: 400px;">
+            <img [src]="selectedCar.picture" class="card-img-top" alt="Car Image">
+            <div class="card-body">
+              <h5 class="card-title">{{selectedCar.car_name}}</h5>
+              <p class="card-text">{{selectedCar.properties}}</p>
+              <!-- Additional details or actions related to the car -->
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="mb-3">
-        <label for="phoneNumber" class="form-label">Phone Number</label>
-        <input type="tel" class="form-control" id="phoneNumber" placeholder="Enter Phone Number">
-      </div>
-      <div class="mb-3">
-        <label for="pickupDate" class="form-label">Pickup Date</label>
-        <input type="date" class="form-control" id="pickupDate">
-      </div>
-      <div class="mb-3">
-        <label for="dropoffDate" class="form-label">Drop-off Date</label>
-        <input type="date" class="form-control" id="dropoffDate">
-      </div>
-      <div class="mb-3">
-        <label for="destination" class="form-label">Destination</label>
-        <input type="text" class="form-control" id="destination" placeholder="Enter Destination">
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
   </div>
+  
+
   

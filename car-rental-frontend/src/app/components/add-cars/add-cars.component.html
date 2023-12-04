@@ -1,0 +1,16 @@
+<form (ngSubmit)="submitPost(name.value, properties.value, picture.files)" class="form-container">
+    <mat-form-field appearance="fill" class="form-field">
+      <input matInput #name placeholder="Car Name" required>
+    </mat-form-field>
+    
+    <mat-form-field appearance="fill" class="form-field">
+      <textarea matInput #properties placeholder="Properties" required></textarea>
+    </mat-form-field>
+    
+    <div class="form-field">
+      <input type="file" #picture required>
+    </div>
+    
+    <button mat-button color="primary" type="submit">Add</button>
+  </form>
+  

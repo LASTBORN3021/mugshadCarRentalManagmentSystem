@@ -1,91 +1,15 @@
 <div class="container">
   <h2>Our Cars</h2>
   <div class="row">
-    <div class="col-md-3 mb-3">
+    <div class="col-lg-4 col-md-6 mb-3" *ngFor="let car of cars">
       <div class="car-card">
-        <img src="../assets/4.jpeg" class="card-img-top" alt="Car 1">
+        <img [src]="car.picture" class="card-img-top" alt="Car Image">
         <div class="card-body">
-          <h5 class="card-title">Car Model 1</h5>
-          <p class="card-text">This is a description of Car Model 1. It is a great choice for those who need a reliable and fuel-efficient vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/5.jpeg" class="card-img-top" alt="Car 2">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 2</h5>
-          <p class="card-text">This is a description of Car Model 2. It is a great choice for those who need a spacious and comfortable vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/6.jpeg" class="card-img-top" alt="Car 3">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 3</h5>
-          <p class="card-text">This is a description of Car Model 3. It is a great choice for those who need a stylish and luxurious vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/1.jpeg" class="card-img-top" alt="Car 4">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 4</h5>
-          <p class="card-text">This is a description of Car Model 4. It is a great choice for those who need a reliable and fuel-efficient vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
+          <h5 class="card-title">{{car.car_name}}</h5>
+          <p class="card-text">{{car.properties}}</p>
+          <a class="btn btn-primary" (click)="hireNow(car.id)">Hire Now</a>
         </div>
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/5.jpeg" class="card-img-top" alt="Car 5">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 5</h5>
-          <p class="card-text">This is a description of Car Model 5. It is a great choice for those who need a reliable and fuel-efficient vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/4.jpeg" class="card-img-top" alt="Car 6">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 6</h5>
-          <p class="card-text">This is a description of Car Model 6. It is a great choice for those who need a spacious and comfortable vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/6.jpeg" class="card-img-top" alt="Car 6">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 6</h5>
-          <p class="card-text">This is a description of Car Model 6. It is a great choice for those who need a spacious and comfortable vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3 mb-3">
-      <div class="car-card">
-        <img src="../assets/4.jpeg" class="card-img-top" alt="Car 6">
-        <div class="card-body">
-          <h5 class="card-title">Car Model 6</h5>
-          <p class="card-text">This is a description of Car Model 6. It is a great choice for those who need a spacious and comfortable vehicle.</p>
-          <a href="#" class="btn btn-primary">Hire Now</a>
-        </div>
-      </div>
-    </div>
+</div>
