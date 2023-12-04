@@ -25,6 +25,17 @@ text-align: center;
 border-radius: 10px;
 transition: background-color 0.3s ease;
 }
+div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.534); /* Adjust the alpha value for transparency */
+  border-radius: 6px;
+  z-index: -1; /* Place the overlay behind the content */
+}
 
 /* Style for the image within each block */
 .block img {
