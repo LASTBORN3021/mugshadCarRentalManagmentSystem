@@ -19,7 +19,7 @@ div::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.315); /* Adjust the alpha value for transparency */
+    background-color: rgba(255, 255, 255, 0.719); /* Adjust the alpha value for transparency */
     border-radius: 6px;
     z-index: -1; /* Place the overlay behind the content */
 }
@@ -46,7 +46,7 @@ body {
 }
 
 .content {
-    background-color: rgba(255, 255, 255, 0.9); /* Adjust the alpha value for transparency */
+    background-color: rgba(255, 255, 255, 0.959); /* Adjust the alpha value for transparency */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -63,12 +63,12 @@ form {
 }
 
 h4 {
-    color: #343a40;
+    color: #090b0c;
 }
 
 label {
     font-weight: bold;
-    color: #495057;
+    color: #080808;
 }
 
 input.form-control,
