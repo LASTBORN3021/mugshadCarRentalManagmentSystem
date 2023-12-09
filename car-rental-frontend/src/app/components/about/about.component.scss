@@ -13,7 +13,7 @@ div::before {
     left: 0;
     width: 80%;
     height: 80%;
-    background-color: rgba(255, 255, 255, 0.219); /* Adjust the alpha value for transparency */
+    background-color: rgba(255, 255, 255, 0.055); /* Adjust the alpha value for transparency */
     border-radius: 10px;
     z-index: -1; /* Place the overlay behind the content */
 }
@@ -32,4 +32,23 @@ li {
 
 h2{
     color: rgb(0, 119, 255);
+}
+.container {
+    background-image: url('../../../assets/backk.jpeg'); /* Set the background image for containers */
+    background-size: cover;
+    background-position: center;
+    color: #070707ce; /* Set text color to white or another contrasting color */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners to the containers */
+    margin-top: 20px;
+}
+
+.block {
+    margin-bottom: 20px;
+    background-color: rgba(240, 248, 255, 0.678);
+}
+
+.block img {
+    max-width: 100%; /* Make sure images don't overflow their container */
+    background-color: #070707;
 }
